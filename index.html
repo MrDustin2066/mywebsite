@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalEverAfter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-image: url('C:/Users/vorst/OneDrive/Desktop/ChatGPT website builder/header final.png');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            padding: 20px;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: black;
+            text-decoration: none;
+        }
+        header nav ul {
+            margin-top: 10px;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px;
+            background-color: #fff;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            text-align: left; /* Restore text alignment to left */
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        section p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        section ul {
+            margin-left: 20px;
+            font-size: 1em;
+        }
+        .service-item {
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .service-item:hover {
+            text-decoration: underline;
+        }
+        .service-description {
+            display: none;
+        }
+
+        /* Video container styling */
+        .video-container {
+            width: 500px;
+            height: 350px;
+            margin: 0 auto; /* Center the video container */
+            overflow: hidden;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer p {
+            font-size: smaller;
+            margin: 0;
+        }
+
+        /* Adjusted spacing between calendar and maps */
+        #maps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #maps iframe {
+            width: 48%;
+            height: 300px;
+        }
+
+        /* Background image for the sections */
+        #about, #services, #maps {
+            background-image: url('C:/Users/vorst/OneDrive/Desktop/ChatGPT website builder/About us.png');
+            background-size: cover;
+            background-position: center;
+        }
+        #contact {
+            background-image: url('C:/Users/vorst/OneDrive/Desktop/ChatGPT website builder/Contact us.png');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: -20px; /* Close the white gap */
+        }
+
+        /* Horizontal line styling */
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to LegalEverAfter</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Specializing in crafting antenuptial contracts with or without accrual, and drafting comprehensive last wills and testaments, we offer a wide array of services tailored to your legal needs. Our commitment to accessibility and convenience is evident through our provision of free virtual consultations. With competitive pricing, we aim to provide market-leading rates. Furthermore, our expertise extends to other contractual services, such as purchasing agreements, partnership agreements, company CIPC registration services, VAT registrations, and B-BBEE certificates.</p>
+        <div class="video-container">
+            <iframe width="500" height="350" src="https://www.youtube.com/embed/w-3xaapjVzY?autoplay=1&controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <hr> <!-- Horizontal line -->
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li class="service-item" onclick="toggleDescription('antenuptial-contracts')">Antenuptial Contracts</li>
+            <div class="service-description" id="antenuptial-contracts" style="display: none;">
+                <p>In South Africa, the law recognizes three types of marital unions: Civil Marriage, Civil Union, and Customary Marriage. Each type of union has its own legal implications and requirements, and it is important for couples to understand their rights and obligations before entering into marriage.</p>
+                <p>Customary Marriage:</p>
+                <p>Customary marriages entered into before the commencement of the Customary Marriages Act, 102 of 1988, are governed by customary law. However, those entered into after the Act came into effect are considered marriages in community of property and of profit and loss, unless the spouses specifically exclude these consequences in an Antenuptial contract.</p>
+                <p>Antenuptial Contracts:</p>
+                <p>An Antenuptial contract, commonly known as a prenuptial agreement, is a legal contract entered into by partners prior to marriage. This contract must be registered and attested in front of a Notary Public. It determines the marital regime for the duration of the marriage and outlines the rights and obligations of each spouse.</p>
+                <p>Options for Antenuptial Contracts:</p>
+                <p>There are several options available for Antenuptial contracts, each with its own advantages and disadvantages:</p>
+                <ul>
+                    <li>In community of Property: This is the default marital regime if no Antenuptial contract is signed. It means that all assets acquired during the marriage belong to both spouses jointly.</li>
+                    <li>Out of community of property with the accrual: This option allows spouses to keep their assets separate during the marriage, but the accrual system applies in the event of divorce or death. This system ensures that both spouses benefit from the growth of their respective estates during the marriage.</li>
+                    <li>Out of community of property without the accrual system: In this option, each spouse retains ownership of their assets, and there is no sharing of assets or liabilities during the marriage. This option is suitable for couples with significant pre-existing assets who wish to keep their finances separate.</li>
+                </ul>
+                <p>Changing the Marriage System:</p>
+                <p>If spouses wish to change their marital regime after marriage, they can apply to the court for permission to do so. This process involves notifying all creditors and obtaining approval from the court, which can be a costly and complex process.</p>
+                <p>Conclusion:</p>
+                <p>Antenuptial contracts play a crucial role in determining the legal rights and obligations of spouses in marriage. It is important for couples to carefully consider their options and seek legal advice to ensure that their Antenuptial contract meets their needs and protects their interests.</p>
+            </div>
+            <li class="service-item" onclick="toggleDescription('last-wills-testaments')">Last Wills & Testaments</li>
+            <div class="service-description" id="last-wills-testaments" style="display: none;">
+                <p>The laws governing succession and wills in South Africa dictate how a deceased individual's estate is distributed and managed. Understanding the latest applicable legislation is crucial for individuals to effectively plan and administer their estates.</p>
+                <p><strong>Laws of Succession:</strong></p>
+                <p>Intestate Succession: The distribution of an estate when someone dies without a valid will (intestate) is regulated by the Intestate Succession Act of 1987. This Act outlines the distribution of assets among surviving spouses, children, and other relatives in the absence of a will.</p>
+                <p>Testate Succession: Testate succession refers to the distribution of an estate according to the provisions of a valid will. The formal requirements for drafting and executing a will are governed by the Wills Act of 1953, ensuring that the testator's wishes are properly recorded and carried out.</p>
+                <p><strong>Validity of Wills:</strong></p>
+                <p>The Wills Act of 1953 sets out the requirements for a will to be considered valid. These include being in writing, signed by the testator in the presence of two competent witnesses, and signed by the witnesses in the presence of the testator and each other.</p>
+                <p><strong>Contents of Wills:</strong></p>
+                <p>A will allows individuals to specify the distribution of their estate, appoint executors, nominate guardians for minors, and make specific bequests. The provisions of the will must comply with legal requirements and reflect the testator's intentions.</p>
+                <p><strong>Revocation and Amendment:</strong></p>
+                <p>The testator has the right to revoke or amend their will at any time before their death, provided they follow the prescribed formalities. This may involve drafting a new will, executing a codicil, or making handwritten changes to the existing will.</p>
+                <p><strong>Relevant Legislation:</strong></p>
+                <p>Intestate Succession Act (Act 81 of 1987): This Act governs the distribution of estates in cases where there is no valid will. It ensures that assets are distributed among surviving relatives according to predetermined rules.</p>
+                <p>Wills Act (Act 7 of 1953): The Wills Act regulates the formal requirements for drafting, executing, and revoking wills. Compliance with this Act ensures that wills are legally valid and enforceable.</p>
+                <p><strong>Importance of Estate Planning:</strong></p>
+                <p>Asset Protection: Proper estate planning safeguards assets and ensures they are distributed according to the testator's wishes.</p>
+                <p>Family Provision: Wills allow individuals to provide for their family members and dependents, ensuring their financial security.</p>
+                <p>Executorship: Naming an executor in the will facilitates the efficient administration of the estate and the fulfillment of the testator's wishes.</p>
+                <p><strong>Conclusion:</strong></p>
+                <p>By adhering to the latest legislation governing succession and wills in South Africa, individuals can effectively plan and manage their estates. Proper estate planning, including drafting valid wills and engaging in legal compliance, ensures that assets are distributed as intended and provides for the financial well-being of beneficiaries. Seeking legal guidance during the drafting and execution of wills is advisable to ensure adherence to current laws and mitigate potential disputes or challenges to the estate.</p>
+            </div>
+            <li class="service-item" onclick="toggleDescription('partnership-agreements')">Partnership Agreements</li>
+            <div class="service-description" id="partnership-agreements" style="display: none;">
+                <p>Partnership agreements serve as pivotal documents delineating the terms and conditions of business relationships among partners. In South Africa, partnerships are subject to contemporary legislation, notably the Companies Act of 2008, to ensure transparency, fairness, and legal compliance in business dealings.</p>
+                <p><strong>Types of Partnerships:</strong></p>
+                <p>Limited Partnership (Partnership en Commandite): This structure comprises general partners with unlimited liability and limited partners with restricted liability.</p>
+                <p>General Partnership (Partnership en Nom Collectif): Here, all partners share management responsibilities and liability for the partnership's debts and obligations.</p>
+                <p>Partnership with a Fixed Term or Adventure:</p>
+                <p>Established for specific projects, this partnership type terminates upon completion, with partners contributing capital and sharing profits based on the partnership agreement.</p>
+                <p><strong>Key Components of a Partnership Agreement:</strong></p>
+                <p>Contributions: Partners detail their capital contributions, ownership percentages, and profit-sharing arrangements.</p>
+                <p>Management Structure: Agreements stipulate decision-making processes, management responsibilities, and dispute resolution mechanisms.</p>
+                <p>Profit Distribution: Guidelines for profit and loss distribution among partners, including sharing ratios or formulas, are established.</p>
+                <p>Liability: Partners' liabilities for the partnership's debts and obligations, along with any indemnification provisions, are outlined.</p>
+                <p>Termination and Dissolution: Conditions for termination or dissolution, such as death, bankruptcy, or withdrawal of partners, are addressed.</p>
+                <p>Non-competition and Confidentiality: Partners may agree to non-compete or confidentiality clauses to safeguard the partnership's interests.</p>
+                <p><strong>Applicable Legislation and Legal Practices:</strong></p>
+                <p>Companies Act of 2008: This comprehensive legislation governs the establishment, operation, and regulation of companies in South Africa. It provides default rules for partnerships and imposes various requirements and procedures for company registration, corporate governance, and business rescue, thereby influencing partnership agreements.</p>
+                <p>Partnership Agreement: Although not legally mandatory, a written partnership agreement is crucial for clarifying rights and obligations. It may override certain provisions of the Companies Act if agreed upon by partners.</p>
+                <p>Common Law: Common law principles and precedents also influence partnerships in South Africa, with courts interpreting and enforcing partnership agreements based on equity and fairness.</p>
+                <p><strong>Conclusion:</strong></p>
+                <p>Partnership agreements, complemented by the Companies Act of 2008, are instrumental in defining business relationships among partners in South Africa. By adhering to contemporary legislation and legal practices, partners can establish a transparent framework for their business dealings, mitigate disputes, and ensure legal compliance. Seeking legal advice when drafting or reviewing partnership agreements ensures alignment with the law and protects all parties' interests.</p>
+            </div>
+            <li class="service-item" onclick="toggleDescription('purchasing-agreements')">Purchasing Agreements</li>
+<div class="service-description" id="purchasing-agreements" style="display: none;">
+    <p>Purchasing Agreements are crucial legal instruments that govern the acquisition of goods or services between parties. These agreements outline the terms and conditions of the purchase, including price, delivery terms, warranties, and payment arrangements, among other essential details.</p>
+    <p>South African law recognizes the importance of clear and comprehensive purchasing agreements to protect the rights and interests of both buyers and sellers. The latest laws and legal principles governing purchasing agreements in South Africa are primarily derived from the common law principles of contract, as well as statutory provisions such as the Consumer Protection Act (Act 68 of 2008) and the Sale of Goods Act (Act 56 of 1978).</p>
+    <p>Purchasing agreements must adhere to certain legal requirements to be enforceable. These include:</p>
+    <ul>
+        <li>Offer and Acceptance: The agreement must involve a clear offer by one party and an unequivocal acceptance by the other party.</li>
+        <li>Consideration: There must be a mutual exchange of value between the parties, typically in the form of goods, services, or money.</li>
+        <li>Capacity: Both parties must have the legal capacity to enter into the agreement, meaning they are of sound mind and legally competent.</li>
+        <li>Legality: The agreement must not violate any laws or public policy.</li>
+        <li>Certainty: The terms of the agreement must be sufficiently clear and definite to be enforceable.</li>
+        <li>Formalities: Some agreements may require specific formalities to be legally binding, such as written documentation or signatures.</li>
+    </ul>
+    <p>Additionally, purchasing agreements may also be subject to specific industry regulations or standards, depending on the nature of the goods or services involved.</p>
+</div>
+
+           <li class="service-item" onclick="toggleDescription('cipc-registrations')">CIPC Company Registrations</li>
+<div class="service-description" id="cipc-registrations" style="display: none;">
+    <p>The Companies and Intellectual Property Commission (CIPC) is a regulatory body in South Africa responsible for the registration and regulation of companies, intellectual property (IP), and business entities. CIPC plays a vital role in promoting economic growth and protecting the rights of businesses and individuals in the corporate and intellectual property sectors.</p>
+    <p><strong>Functions of CIPC:</strong></p>
+    <ul>
+        <li><strong>Company Registration:</strong> CIPC facilitates the registration of new companies and business entities in South Africa. This includes companies, close corporations, cooperatives, and non-profit organizations. The registration process involves submitting the necessary documents and complying with the requirements set out in the Companies Act, 2008.</li>
+        <li><strong>Intellectual Property Registration:</strong> CIPC oversees the registration and administration of intellectual property rights, including trademarks, patents, designs, and copyright. Individuals and businesses can register their IP assets with CIPC to protect their rights and prevent unauthorized use or infringement.</li>
+        <li><strong>Regulatory Compliance:</strong> CIPC ensures that companies and business entities comply with the relevant laws and regulations governing corporate governance, financial reporting, and disclosure requirements. This includes monitoring compliance with the Companies Act and other applicable legislation.</li>
+        <li><strong>Business Information Services:</strong> CIPC provides access to business information and registers, including company profiles, directorships, and registration details. This information is available to the public and stakeholders to promote transparency and accountability in the business environment.</li>
+    </ul>
+    <p><strong>New Company Registrations in South Africa:</strong></p>
+    <ul>
+        <li><strong>Preparation and Submission of Documents:</strong> To register a new company in South Africa, individuals or entities must first choose a suitable business structure, such as a private company (Pty) Ltd or a public company (Ltd). They must then prepare and submit the required documents to CIPC, including a Memorandum of Incorporation (MOI), company name reservation, and director information.</li>
+        <li><strong>Name Reservation:</strong> Before registering a company, applicants must apply to CIPC to reserve a unique name for their business. The proposed name must comply with the naming requirements set out in the Companies Act and must not infringe on existing trademarks or intellectual property rights.</li>
+        <li><strong>Registration Process:</strong> Once the necessary documents are prepared and submitted, CIPC will process the application for company registration. If all requirements are met, CIPC will issue a Certificate of Incorporation, officially recognizing the company as a legal entity.</li>
+        <li><strong>Compliance and Ongoing Obligations:</strong> After registration, companies must comply with ongoing obligations, such as filing annual returns, maintaining accurate records, and adhering to corporate governance standards. Failure to comply with these obligations may result in penalties or the deregistration of the company.</li>
+    </ul>
+    <p><strong>Conclusion:</strong> The Companies and Intellectual Property Commission (CIPC) plays a crucial role in the registration and regulation of companies and intellectual property in South Africa. Through its functions and services, CIPC facilitates the establishment of new businesses, protects intellectual property rights, and promotes transparency and compliance in the corporate sector.</p>
+</div>
+
+           <li class="service-item" onclick="toggleDescription('vat-registrations')">VAT Registrations</li>
+<div class="service-description" id="vat-registrations" style="display: none;">
+    <p>Value Added Tax (VAT) registration is a legal requirement for businesses in South Africa that meet certain criteria regarding their turnover and taxable supplies. Understanding the relevant laws and regulations governing VAT registration is crucial for businesses operating in the country.</p>
+    <p><strong>VAT Legislation:</strong></p>
+    <ul>
+        <li><strong>Value Added Tax Act (Act 89 of 1991):</strong> This legislation governs the administration and collection of VAT in South Africa. It sets out the requirements, procedures, and obligations for VAT registration, reporting, and compliance.</li>
+    </ul>
+    <p><strong>Criteria for VAT Registration:</strong></p>
+    <ul>
+        <li><strong>Threshold Turnover:</strong> A business must register for VAT if its total taxable turnover in any consecutive 12-month period exceeds or is expected to exceed the prescribed threshold. As of 2022, the threshold for VAT registration is R1 million.</li>
+        <li><strong>Mandatory Registration:</strong> Certain businesses are required to register for VAT regardless of their turnover. These include vendors who carry on an enterprise wholly or mainly in respect of taxable supplies made in the course of their enterprise.</li>
+    </ul>
+    <p><strong>VAT Registration Process:</strong></p>
+    <ul>
+        <li><strong>Application to SARS:</strong> Businesses seeking VAT registration must submit an application to the South African Revenue Service (SARS) using the prescribed form (VAT101). The application can be completed online through the SARS eFiling system or manually submitted to a SARS branch office.</li>
+        <li><strong>Documentation Required:</strong> Along with the VAT101 form, businesses may be required to submit supporting documentation, such as proof of business ownership, bank statements, and financial records. SARS may request additional information or documentation during the registration process.</li>
+        <li><strong>Approval and Issuance of VAT Number:</strong> Once the application is processed and approved by SARS, the business will be issued with a VAT registration number. This number must be displayed on invoices, receipts, and other business documents.</li>
+    </ul>
+    <p><strong>Compliance and Obligations:</strong></p>
+    <ul>
+        <li><strong>VAT Returns:</strong> Registered businesses are required to submit VAT returns to SARS on a regular basis, typically bi-monthly or monthly. These returns report the VAT collected on sales (output tax) and VAT paid on purchases (input tax).</li>
+        <li><strong>VAT Payments:</strong> Businesses must pay any VAT liabilities to SARS by the due date specified on the VAT return. Failure to pay VAT on time may result in penalties and interest charges.</li>
+        <li><strong>Record-Keeping:</strong> Registered businesses are obligated to maintain accurate records of their VAT transactions, including invoices, receipts, and accounting records. These records must be retained for a specified period as per VAT regulations.</li>
+    </ul>
+    <p><strong>Conclusion:</strong> VAT registration is a fundamental requirement for businesses in South Africa meeting the prescribed turnover criteria or engaged in specific taxable activities. By adhering to the relevant legislation and compliance procedures outlined in the Value Added Tax Act, businesses can fulfill their VAT obligations, maintain regulatory compliance, and contribute to the effective administration of the VAT system in the country. Understanding the VAT registration process and obligations is essential for businesses to navigate the tax system effectively and avoid potential penalties or liabilities.</p>
+</div>
+
+            <li class="service-item" onclick="toggleDescription('bbbee-certificates')">B-BBEE Certificates</li>
+<div class="service-description" id="bbbee-certificates" style="display: none;">
+    <p>Broad-Based Black Economic Empowerment (B-BBEE) certificates are pivotal documents in South Africa, reflecting a company's commitment to promoting economic transformation and empowerment. Understanding the relevant laws and commissions governing B-BBEE certification is crucial for businesses operating in South Africa.</p>
+    <p><strong>B-BBEE Legislation:</strong></p>
+    <ul>
+        <li><strong>Broad-Based Black Economic Empowerment Act (Act 53 of 2003):</strong> This legislation establishes the legal framework for B-BBEE initiatives in South Africa. It outlines the objectives, principles, and implementation mechanisms for promoting economic transformation and empowering historically disadvantaged individuals (HDIs).</li>
+        <li><strong>B-BBEE Codes of Good Practice:</strong> The Department of Trade, Industry, and Competition (DTIC) issues Codes of Good Practice to provide guidelines and criteria for B-BBEE compliance. These codes set out the requirements for measuring B-BBEE compliance across various sectors and business entities.</li>
+    </ul>
+    <p><strong>B-BBEE Certification Process:</strong></p>
+    <ul>
+        <li><strong>Verification Agencies:</strong> B-BBEE verification is conducted by accredited verification agencies approved by the South African National Accreditation System (SANAS). These agencies assess companies' compliance with B-BBEE requirements based on the relevant codes of good practice.</li>
+        <li><strong>Criteria for Certification:</strong> Companies seeking B-BBEE certification must meet specific criteria related to ownership, management control, skills development, enterprise and supplier development, and socio-economic development. The extent of compliance determines the level of B-BBEE certification awarded.</li>
+    </ul>
+    <p><strong>Relevant Commissions and Bodies:</strong></p>
+    <ul>
+        <li><strong>Broad-Based Black Economic Empowerment Commission (B-BBEE Commission):</strong> Established under the B-BBEE Act, the B-BBEE Commission monitors and enforces compliance with B-BBEE legislation. It investigates complaints, conducts inquiries, and issues directives to ensure adherence to B-BBEE principles.</li>
+        <li><strong>Department of Trade, Industry, and Competition (DTIC):</strong> The DTIC is responsible for overseeing B-BBEE policy development, implementation, and monitoring. It collaborates with other government departments and stakeholders to promote economic transformation and empowerment.</li>
+    </ul>
+    <p><strong>Importance of B-BBEE Certification:</strong></p>
+    <ul>
+        <li><strong>Business Opportunities:</strong> B-BBEE certification enhances companies' competitiveness and access to business opportunities, contracts, and procurement opportunities in both the public and private sectors.</li>
+        <li><strong>Social Responsibility:</strong> B-BBEE certification demonstrates a company's commitment to corporate social responsibility and contributing to socio-economic development in South Africa.</li>
+    </ul>
+    <p><strong>Conclusion:</strong> B-BBEE certificates are integral to South Africa's economic transformation agenda, promoting inclusivity, empowerment, and sustainability. Adhering to the relevant laws, codes of practice, and certification processes ensures businesses contribute positively to economic transformation while benefiting from enhanced market opportunities and stakeholder trust. Collaboration with regulatory bodies, such as the B-BBEE Commission and DTIC, fosters transparency, accountability, and continuous improvement in B-BBEE compliance and implementation.</p>
+</div>
+
+           <li class="service-item" onclick="toggleDescription('liquor-licenses')">Liquor Licenses</li>
+<div class="service-description" id="liquor-licenses" style="display: none;">
+    <p>The Liquor Act 59 of 2003 came into effect on 13 August 2004.</p>
+    <p>The Liquor Act 59 of 2003 repeals the 1989 Act only in those provinces that have promulgated provincial liquor legislation (Currently Eastern Cape and Gauteng).</p>
+    <p>The Liquor Act of 1989 remains in force in provinces that have not promulgated liquor legislation.</p>
+    <p><strong>1. Before applying for a Liquor License</strong></p>
+    <p>As part of town planning – areas are zoned for various applications, such as residential, commercial, entertainment etc. The Gauteng Liquor Act absolutely prohibit the issue of liquor licenses within areas which are not zoned for same. When applying for a liquor license for either of the following: Liquor Store, Bar, Tavern, Pool club and Night club, local authority’s approval has to be obtained for allowing the above, prior to applying for said liquor license.</p>
+    <p><strong>2. Requirements and Tips to assist in application for a liquor license</strong></p>
+    <ol>
+        <li><strong>SAPS Clearance certificate:</strong> First step is to obtain a SAPS police clearance certificate verifying that applicant do not hold any prior criminal judgement/s. This procedure can take up to six weeks.</li>
+        <li><strong>Premises in which you plan to conduct business:</strong>
+            <ul>
+                <li>A liquor license is linked to the premises in which the business will be conducted and continual operation in said premises is a requirement to ensure the liquor license stays applicable.</li>
+                <li>Your business premises, for public use, cannot be less than 50 Square meters.</li>
+                <li>The premises must be situated in an authorized area, as per the local authorities prescribed zoning areas. If the municipality did not zone the area for liquor license allowance, you will not get a liquor license.</li>
+                <li>A letter confirming acceptance of your application for said liquor license, must be obtained from the local Municipality.</li>
+            </ul>
+        </li>
+        <li><strong>SARS Clearance:</strong> If the application is in the name of a juristic person i.e a company, same will require a tax clearance certificate. If the application is in the name of a private individual, then he/she has to apply for a tax clearance certificate in their personal capacity.</li>
+        <li><strong>Do not self-apply:</strong> Applying for a liquor license is a tricky process which can take up to 6 months for approval. Should your application fail, you are not allowed to re-apply within the next 12 months.</li>
+        <li><strong>Contact a Specialist in liquor license applications:</strong> Consult with a Lawyer or Consultant – who has experience in liquor license applications. Preparation of the documents, by the above specialist, will reduce your application time and costs and assure that your application proceed in the correct manner.</li>
+    </ol>
+    <p><strong>3. Services we offer</strong></p>
+    <p>LegalEverAfter have advanced experience in liquor license applications and arguing litigation related to same, our services include but are not limited to:</p>
+    <ul>
+        <li>Application of
+            <ul>
+                <li>New liquor License's</li>
+                <li>Transfer of liquor license from one property/premise to another</li>
+                <li>Temporarily or Catering permits to serve liquor</li>
+                <li>Alterations of premises – increase or modification of existing premises</li>
+                <li>Micro Manufacturing of liquor</li>
+            </ul>
+        </li>
+        <li>We also offer general consultation on all related matters to the above.</li>
+    </ul>
+    <p>Please refer to our Liquor License application’s “Frequently asked questions” for more advice.</p>
+    <p>Please feel free to contact us directly or complete the response form and one of our assistants will be in contact shortly.</p>
+    <p><strong>FAQ LIQUOR LICENCE APPLICATIONS</strong></p>
+    <ol>
+        <li><strong>Who is responsible for enforcing of the National liquor act?</strong><br>The NLA- National Liquor authority is the regulating body and trades within the DTI.</li>
+        <li><strong>When do I qualify as a Micro Manufacturer of Alcohol?</strong><br>A Micro manufacturer is a group or person who manufactures alcohol which is below the macro enterprise annual limits, these limits are as follows:
+            <ul>
+                <li>Beer – 100 Million Litres</li>
+                <li>Sorghum beer – 50 Million Litres</li>
+                <li>Wine 4 Million Litres</li>
+                <li>Spirits – 2 Million Litres</li>
+            </ul>
+        </li>
+        <li><strong>Who is classified as a liquor distributor?</strong><br>A liquor distributor may not sell directly to the public, but may only sell to holders of valid liquor licenses – who in turn may sell liquor to the public.</li>
+        <li><strong>How long does a new application take?</strong><br>An application can take up to 6 Months.</li>
+        <li><strong>If my application fail, can I re-apply?</strong><br>Yes you can re-apply, subject to fulfilling the requirements which was previously rejected. Re-application can only take place 12 months after original rejection of liquor license application.</li>
+        <li><strong>Who are considered liquor retailers, do I fall within that category?</strong><br>Retailers sells to the public and are not allowed to sell to persons under the age of 18. Examples of such retailers are: Bottle stores, Liquor Stores, Restaurants, Bars, Taverns, Retail outlets – Spar, Pick & Pay etc.</li>
+        <li><strong>What documents are required for a liquor license application?</strong><br>Various documents are required, including but not limited to: Zoning certificate from your local authority which confirm the allowance of such application, a statement which motivates your reasons for the application, confirmation of the applicant’s authority to apply, proof of application payment made, valid Certified copy of SA ID book, and or Company registration documentation, a Valid Police clearance certificate – not older than 3 months, a BEEE certificate, and a valid SARS TAX Clearance certificate.</li>
+        <li><strong>What fees are applicable/payable when applying for a liquor license?</strong><br>A number of fees are payable, including an annual renewal fee. These fees include: Application Fee, Initial registration fee, Notice to review, Annual renewal fee, Transfer Fee, Request to variation of conditions, Notice of change of location (premises) and activities, Appointment of person who is allowed to conduct activities. The variation of fees are also based on the annual turnover and may vary annually, we refer you to the Dti’s website for updated fee structure: <a href="https://www.thedti.gov.za/business_regulation/nla_application_procedures.jsp">DTI Website</a>.</li>
+        <li><strong>When are new applications accepted?</strong><br>New applications are only accepted the last Friday of each month.</li>
+        <li><strong>If I sell my restaurant can I sell and transfer the liquor license to the new owner?</strong><br>Yes, you can sell and transfer your license to a new owner, the basic terms and conditions still apply, however this transfer process is generally done in a shorter period of time.</li>
+        <li><strong>Can I temporarily trade without a liquor license whilst awaiting the approval of same?</strong><br>No trading – without a liquor license – under any condition, is allowed and is a criminal offence which will influence your application negatively. You can only start to trade once you have the actual registration in place and on hand.</li>
+        <li><strong>Can I sell or distribute liquor at a function or fund-raising venue?</strong><br>The rules and regulations of all the provinces are not absolutely the same, but as a general rule, this regulates the selling of liquor. If a function is held where the liquor is not sold – but distributed free of charge- it is technically not covered within the law. This often causes problems for the owners of such venues. If you do however arrange a function where selling of liquor is considered, you can apply for a temporarily license, for the venue, the following documents must be submitted with the application: Plan of the proposed venue, Area plan, Complete description of the venue, A written motivation of the necessity of such a venue/function, Proof that you will have the right to occupy the premises for the function. A temporarily license application must be submitted at least 14 days before the planned function.</li>
+    </ol>
+</div>
+
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries or appointments, please contact us:</p>
+        <p>Phone: 0658074611</p>
+        <p>Email: info@legaleverafter.com</p>
+        <div class="consultation"><strong>Book your FREE virtual consultation today</strong></div>
+    </section>
+
+    <section id="maps">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e4e2e2&ctz=Africa%2FJohannesburg&showPrint=0&showTabs=0&showCalendars=0&src=ZTU3NDI5ZmZkMDhhMjRlNjJiM2E0OGUyNzNiMzIxYTBhOTc2NTYwZjYyMDMzNTJlMWM4MWU5ZDJiOTNkZDAxNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uc2EjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23B39DDB&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1795.1986459234515!2d28.18455688689087!3d-25.85639842694838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1644391162445!5m2!1sen!2sza" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LegalEverAfter. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDescription(serviceId) {
+            var description = document.getElementById(serviceId);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
